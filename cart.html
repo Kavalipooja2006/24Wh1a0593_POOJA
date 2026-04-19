@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCart()">
+
+<div class="header">
+  24WH1A0593_POOJA - E-BOOK MANAGEMENT SYSTEM
+</div>
+
+<div class="layout">
+
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="catalog.html">Catalog</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <div class="main">
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <h2>Cart</h2>
+
+    <table id="cartTable">
+      <tr>
+        <th>Book</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </table>
+
+    <div class="total-box" id="total"></div>
+
+    <button class="checkout-btn" onclick="proceedToCheckout()">
+      Proceed to Checkout
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
